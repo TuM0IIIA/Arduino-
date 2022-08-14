@@ -1,2 +1,2 @@
 # Arduino-
-Watering flower PLC with online feedback
+Watering flower PLC with feedback
