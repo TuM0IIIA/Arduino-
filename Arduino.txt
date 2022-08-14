@@ -1,0 +1,101 @@
+void setup() 
+  // put your setup code here, to run once:
+{
+ }
+
+void loop() 
+  // put your main code here, to run repeatedly:
+{
+  }
+
+void pinMode(int pin, int mode)
+//shows Arduino digital mode setup - input/output
+{
+  }
+
+int diditalRead(int pin)
+//read data from digital connector (could be LOW/HIGH)
+{
+  }
+
+void digitalWrite (int pin, int value)
+//write data to the digital connector (value coul be HIGH/LOW)
+
+{
+ }
+
+int analogRead(int pin)
+//read data from the analog connector (Value from 0/1023)
+{
+  }
+
+void analogWrite(int pin, int value)
+//write data to analog connector (value from 0/1023)
+{
+  }
+
+void Serial.begin(long speed)
+//start sending and receiving serial data. Speed shown in bit/sec . (Usually speed  is 9600)
+
+{
+ }
+
+void Serial.println(val)
+//send data to serial port val (could be any type)
+
+{
+  }
+
+void delay(long interval)
+//Stops program for interval (msec.)
+
+{
+  }
+--------------------------------------------------------------
+if (nail < 800)
+    {
+       Serial.print ("need water");
+        //switch on the diode RED
+        digitalWrite(nail,1);
+    }
+        if (millis() - blink_diode > 500)
+         {
+          blink_diode = millis();
+          Serial.println ("Huston, we have a problem!");
+         }
+   
+    if (nail > 800)
+    {
+         
+        Serial.print ("Humidity level is Ok");
+        digitalWrite(nail,0);
+       
+        // switch off the diode
+      }
+  
+----------------------------------------------------------------
+ if (14 < 800)
+    {
+       Serial.print ("need water");
+        //switch on diode RED
+        digitalWrite(14,1);
+    }
+        if (millis() - blink_diode > 500)
+         {
+          blink_diode = millis();
+          Serial.println ("Huston, we have a problem!");
+          //switch on diode YELLOW
+         }
+   
+    if (nail > 800)
+    {
+         
+        Serial.print ("Humidity level is Ok");
+        //switch on diode GREEN
+        digitalWrite(14,0);
+       
+        // switch off the diode
+      }
+
+
+
